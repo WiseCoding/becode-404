@@ -71,6 +71,7 @@ footer {
   width: 100%;
   min-height: $barheight;
   bottom: 0;
+  color: #a0a0a0;
 
   div {
     @include flexBox();
