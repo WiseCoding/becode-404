@@ -1,2 +1,5 @@
-# becode-404
-Create a fitting 404 page for becode.org
+## View Exercise Online
+
+- [View on PAGES](https://wisecoding.github.io/becode-404/)
+
+@WiseCoding
