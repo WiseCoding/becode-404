@@ -1,8 +1,5 @@
-# *.extension , all files with the .extensions will be ignored
-# name.extension - only this specific name.extension file will be ignored
+# *.extension , All files with the .extensions will be ignored
+# name.extension - Only this specific name.extension file will be ignored
 
-#hidden cache file macOS
+#Hidden cache file macOS
 *.DS_store
-
-#scss can be ignored, .css compiling is done locally
-*.scss
