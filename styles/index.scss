@@ -56,9 +56,11 @@ nav {
     @include flexBox();
     justify-content: start;
   }
-  p {
+  p, a {
     margin-left: 11px;
     margin-right: 11px;
+    text-decoration: none;
+    color: #ffffff;
   }
 }
 
