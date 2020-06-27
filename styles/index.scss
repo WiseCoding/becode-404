@@ -15,6 +15,7 @@ body {
 
 /* Variables */
 $barheight: 75px;
+$navheight: 105px;
 
 /* Minxins */
 @mixin flexBox {
@@ -32,7 +33,7 @@ $barheight: 75px;
 
 /* Basic CSS */
 header {
-  min-height: 75px;
+  min-height: $barheight;
   background-color: #000000;
   color: #ffffff;
 
@@ -51,7 +52,7 @@ header {
 nav {
   background-color: #16232e;
   color: #ffffff;
-  min-height: 105px;
+  min-height: $navheight;
 
   div {
     @include flexBox();
@@ -69,7 +70,6 @@ nav {
 footer {
   background-color: #000000;
   color: #ffffff;
-  position: absolute;
   width: 100%;
   min-height: $barheight;
   bottom: 0;
@@ -90,19 +90,15 @@ footer {
   }
 }
 
-// MAIN
+/* VERTICAL GRID */
 body {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-.pageWrap {
-  background: center / cover no-repeat url("../images/night.gif");
+  display: grid;
+  gap: 0px;
+  /* Row placement */
+  grid-template-rows: $barheight+$navheight 1fr $barheight;
 }
 
-h1 {
-  font-family: Baskerville;
-  font-size: xx-large;
-  text-align: center;
+main {
+  background: center / cover no-repeat url("../images/Day.jpg");
+  height: 100%;
 }
