@@ -1,0 +1,5 @@
+# *.extension , All files with the .extensions will be ignored
+# name.extension - Only this specific name.extension file will be ignored
+
+#Hidden cache file macOS
+*.DS_store
