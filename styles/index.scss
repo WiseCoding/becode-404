@@ -27,7 +27,7 @@ $navheight: 105px;
   align-items: center;
 }
 .stickyHead {
-  box-shadow: 0px 5px 20px 10px #c0b8b8bb;
+  box-shadow: 0px 5px 20px 10px #000000bb;
   position: sticky;
 }
 
@@ -95,7 +95,7 @@ body {
   display: grid;
   gap: 0px;
   /* Row placement */
-  grid-template-rows: $barheight+$navheight 1fr $barheight;
+  grid-template-rows: $barheight + $navheight 1fr $barheight;
 }
 
 main {
