@@ -99,6 +99,18 @@ body {
 }
 
 main {
-  background: center / cover no-repeat url("../images/Day.jpg");
+  background: center / cover no-repeat url('../images/Day.jpg');
   height: 100%;
+}
+
+/* DARK/LIGHT MODE */
+.modeWrap {
+  position: absolute;
+
+  #light-mode {
+    //visibility: hidden;
+  }
+  #light-mode {
+    //visibility: hidden;
+  }
 }
