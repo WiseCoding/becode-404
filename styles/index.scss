@@ -11,6 +11,7 @@ body {
   font-size: 1rem;
   width: 100%;
   height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /* Variables */
@@ -99,7 +100,7 @@ body {
 }
 
 main {
-  background: center / cover no-repeat url('../images/Day.jpg');
+  background: center / cover no-repeat url("../images/Day.jpg");
   height: 100%;
 }
 
@@ -113,4 +114,47 @@ main {
   #light-mode {
     //visibility: hidden;
   }
+}
+
+/* TEXT */
+
+#title {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0px;
+  font-size: 4rem;
+}
+
+.textbox {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#subtext {
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+/* BUTTONS */
+
+#learn,
+#hire {
+  display: inline-flex;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 1px solid #16232e;
+  background-color: #16232e;
+  color: #ffffff;
+  margin: 15px;
 }
