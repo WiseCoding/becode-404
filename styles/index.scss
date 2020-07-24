@@ -116,7 +116,7 @@ main {
   color: #ffffff;
   margin: 20px 0px;
   font-size: 4rem;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .textBox {
@@ -171,7 +171,6 @@ main {
   .pageWrap {
     h1 {
       font-size: 3rem;
-      margin-top: 100px;
     }
     .textBox {
       p {
@@ -189,7 +188,6 @@ main {
   .pageWrap {
     h1 {
       font-size: 2.3rem;
-      margin-top: 100px;
     }
     .textBox {
       p {
@@ -197,10 +195,9 @@ main {
       }
     }
     .buttonWrap {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 20px;
       .button {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
