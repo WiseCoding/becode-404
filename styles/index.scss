@@ -80,7 +80,7 @@ footer {
     @include flexBox();
     justify-content: space-between;
 
-    ul {
+    div {
       @include flexBox();
       margin: 0px;
 

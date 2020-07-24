@@ -51,7 +51,7 @@
     document.querySelector('#subtext').textContent =
       "Everyone makes mistakes, let's solve it together...";
     document.querySelector('#btn1').textContent = 'Learn Coding';
-    document.querySelector('#btn2').textContent = 'Find Talent';
+    document.querySelector('#btn2').textContent = 'Hire Talent';
   };
   document.querySelector('#nl').onclick = () => {
     //Dutch
