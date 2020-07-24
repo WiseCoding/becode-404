@@ -55,7 +55,7 @@
   };
   document.querySelector('#nl').onclick = () => {
     //Dutch
-    document.querySelector('h1 code').textContent = 'Oeps, 404!';
+    document.querySelector('h1 code').textContent = 'Oeps, 404d!';
     document.querySelector('#subtext').textContent =
       'We maken allemaal eens fouten, laten we het samen oplossen...';
     document.querySelector('#btn1').textContent = 'Leer Coderen';
@@ -63,7 +63,7 @@
   };
   document.querySelector('#fr').onclick = () => {
     //French
-    document.querySelector('h1 code').textContent = 'Oups, 404!';
+    document.querySelector('h1 code').textContent = 'Oups, 404d!';
     document.querySelector('#subtext').textContent =
       'Tout le monde fait des erreurs, résolvons-le ensemble ...';
     document.querySelector('#btn1').textContent = 'Apprenez Code';
