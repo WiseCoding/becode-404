@@ -50,8 +50,8 @@
     document.querySelector('h1 code').textContent = 'Whoops, 404d!';
     document.querySelector('#subtext').textContent =
       "Everyone makes mistakes, let's solve it together...";
-    document.querySelector('#btn1').textContent = 'Learn to Code';
-    document.querySelector('#btn2').textContent = 'Hire a Coder';
+    document.querySelector('#btn1').textContent = 'Learn Coding';
+    document.querySelector('#btn2').textContent = 'Find Talent';
   };
   document.querySelector('#nl').onclick = () => {
     //Dutch
