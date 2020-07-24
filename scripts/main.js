@@ -57,7 +57,7 @@
     //Dutch
     document.querySelector('h1 code').textContent = 'Oeps, 404d!';
     document.querySelector('#subtext').textContent =
-      'We maken allemaal eens fouten, laten we het samen oplossen...';
+      'We maken allemaal fouten, laten we het samen oplossen...';
     document.querySelector('#btn1').textContent = 'Leer Coderen';
     document.querySelector('#btn2').textContent = 'Zoek Talent';
   };
