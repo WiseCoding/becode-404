@@ -24,12 +24,11 @@ main {
 }
 footer {
   position: absolute;
-  right: 0;
   bottom: 0;
+  right: 0;
+  margin-right: 20%;
 
   a {
-    height: 100px;
-
     img {
       margin: 0.2rem;
       height: 20px;
