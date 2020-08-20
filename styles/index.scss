@@ -9,207 +9,194 @@
 html,
 body {
   font-size: 1rem;
-  width: 100%;
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
 
-/* Variables */
-$barheight: 75px;
-$navheight: 105px;
-
-/* Minxins */
-@mixin flexBox {
-  margin-left: 10%;
-  margin-right: 10%;
-  min-height: inherit;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-.stickyHead {
-  box-shadow: 0px 5px 20px 10px #000000bb;
-  position: sticky;
-}
-
 /* Basic CSS */
-header {
-  min-height: $barheight;
-  background-color: #000000;
-  color: #ffffff;
-
-  div {
-    @include flexBox();
-    justify-content: end;
-  }
-  a {
-    margin-left: 11px;
-    margin-right: 11px;
-    text-decoration: none;
-    color: #ffffff;
-  }
+body {
+  position: relative;
+  //padding: 150px 0px;
 }
+main {
+  position: relative;
+  background: center / cover no-repeat url('../images/Day.jpg');
+  height: 100%;
 
-nav {
-  background-color: #16232e;
-  color: #ffffff;
-  min-height: $navheight;
+  /* TEXT */
+  .pageWrap {
+    position: relative;
+    z-index: 100;
+    padding: 10px 0;
 
-  div {
-    @include flexBox();
-    justify-content: start;
-  }
-  p,
-  a {
-    margin-left: 11px;
-    margin-right: 11px;
-    text-decoration: none;
-    color: #ffffff;
-  }
-}
+    h1 {
+      margin: 20px auto;
+      text-align: center;
+      color: #ffffff;
+      font-size: 4rem;
+    }
 
-footer {
-  background-color: #000000;
-  color: #ffffff;
-  width: 100%;
-  min-height: $barheight;
-  bottom: 0;
-  color: #a0a0a0;
+    .textBox {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      background-color: #ffffff;
+      opacity: 80%;
+      box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
 
-  div {
-    @include flexBox();
-    justify-content: space-between;
+      p {
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        font-size: 2rem;
+        padding: 10px 20px;
+      }
+    }
 
-    div {
-      @include flexBox();
-      margin: 0px;
+    /* BUTTONS */
+    .buttonWrap {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 15px;
 
-      a {
-        margin: 5px;
+      .button {
+        font-family: 'Titillium Web', sans-serif;
+        padding: 15px 35px;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        border: 1px solid #16232e;
+        background-color: #16232ef5;
+        color: #ffffff;
+        margin: 15px;
+        box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+      }
+      .button:hover {
+        background-color: #16232e;
+        border-color: #ffffffe7;
+        box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
       }
     }
   }
-}
 
-/* VERTICAL GRID */
-body {
-  display: grid;
-  gap: 0px;
-  /* Row placement */
-  grid-template-rows: $barheight + $navheight 1fr $barheight;
-}
+  // MASCOT
+  .mascotWrap {
+    position: absolute;
+    z-index: 25;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-main {
-  background: center / cover no-repeat url('../images/Day.jpg');
-  height: 100%;
-}
-
-/* DARK/LIGHT MODE */
-.modeWrap {
-  position: absolute;
-  top: 0;
-  margin: 1rem;
-
-  svg {
-    margin: 0.1rem;
+    img {
+      width: 500px;
+    }
   }
-  svg:hover {
-    background-color: rgba(255, 255, 255, 0.753);
-    border-radius: 0.25rem;
-    stroke: #000000;
+
+  // SOCIAL
+  .social {
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    right: 0;
+    margin-right: 20%;
+
+    a {
+      img {
+        margin: 0.2rem;
+        height: 20px;
+      }
+      img:hover {
+        background-color: #ffffffa1;
+        border-radius: 0.25rem;
+      }
+    }
   }
-}
 
-/* TEXT */
-.pageWrap h1 {
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff;
-  margin: 20px 0px;
-  font-size: 4rem;
-  margin-top: 30px;
-}
+  // DARK/LIGHT MODE
+  .modeWrap {
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    margin: 1rem;
 
-.textBox {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  background-color: #ffffff;
-  opacity: 80%;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
-
-  p {
-    margin: 0 auto;
-    text-align: center;
-    color: black;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    font-size: 2rem;
-    padding: 10px 20px;
-  }
-}
-
-/* BUTTONS */
-.buttonWrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-
-  .button {
-    font-family: 'Titillium Web', sans-serif;
-    padding: 10px 30px;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    border: 1px solid #16232e;
-    background-color: #16232ef5;
-    color: #ffffff;
-    margin: 10px;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-  }
-  .button:hover {
-    background-color: #16232e;
-    border-color: #ffffffe7;
-    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
+    svg {
+      margin: 0.1rem;
+    }
+    svg:hover {
+      background-color: rgba(255, 255, 255, 0.753);
+      border-radius: 0.25rem;
+      stroke: #000000;
+    }
   }
 }
 
 /* Mobile Query */
 @media screen and (max-width: 600px) {
-  .pageWrap {
-    h1 {
-      font-size: 3rem;
-    }
-    .textBox {
-      p {
-        font-size: 1.5rem;
+  main {
+    .pageWrap {
+      h1 {
+        font-size: 3rem;
+      }
+      .textBox {
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .buttonWrap {
+        margin: 20px 20%;
+        .button {
+          font-size: 1.4rem;
+        }
       }
     }
-    .buttonWrap {
-      margin: 20px 20%;
-      .button {
-        font-size: 1.4rem;
+
+    .mascotWrap {
+      justify-content: start;
+      transform: translateX(-125px) rotate(40deg);
+
+      img {
+        max-width: 400px;
       }
+    }
+
+    .social {
+      margin-right: unset;
+      margin-right: 5px;
     }
   }
 }
 @media screen and (max-width: 380px) {
-  .pageWrap {
-    h1 {
-      font-size: 2.3rem;
-    }
-    .textBox {
-      p {
-        font-size: 1.2rem;
+  main {
+    .pageWrap {
+      h1 {
+        font-size: 2.3rem;
+      }
+      .textBox {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .buttonWrap {
+        margin: 20px 15%;
+        .button {
+          font-size: 1.2rem;
+        }
       }
     }
-    .buttonWrap {
-      margin: 20px 15%;
-      .button {
-        font-size: 1.2rem;
+    .mascotWrap {
+      justify-content: start;
+      transform: translateX(-150px) rotate(40deg);
+
+      img {
+        display: none;
+        max-width: 300px;
       }
     }
   }

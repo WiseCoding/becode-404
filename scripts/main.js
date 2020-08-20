@@ -1,4 +1,4 @@
-(function () {
+(() => {
   // Dark / Light Modus
   const light = document.querySelector('#light');
   const dark = document.querySelector('#dark');
@@ -42,31 +42,5 @@
   };
   dark.onclick = () => {
     mode.style.background = "center / cover no-repeat url('images/Evening.jpg')";
-  };
-
-  // Translation
-  document.querySelector('#en').onclick = () => {
-    // English
-    document.querySelector('h1 code').textContent = 'Whoops, 404d!';
-    document.querySelector('#subtext').textContent =
-      "Everyone makes mistakes, let's solve it together...";
-    document.querySelector('#btn1').textContent = 'Learn Coding';
-    document.querySelector('#btn2').textContent = 'Hire Talent';
-  };
-  document.querySelector('#nl').onclick = () => {
-    //Dutch
-    document.querySelector('h1 code').textContent = 'Oeps, 404d!';
-    document.querySelector('#subtext').textContent =
-      'We maken allemaal fouten, laten we het samen oplossen...';
-    document.querySelector('#btn1').textContent = 'Leer Coderen';
-    document.querySelector('#btn2').textContent = 'Zoek Talent';
-  };
-  document.querySelector('#fr').onclick = () => {
-    //French
-    document.querySelector('h1 code').textContent = 'Oups, 404d!';
-    document.querySelector('#subtext').textContent =
-      'Tout le monde fait des erreurs, résolvons-le ensemble ...';
-    document.querySelector('#btn1').textContent = 'Apprenez Code';
-    document.querySelector('#btn2').textContent = 'Embaucher Talents';
   };
 })();
