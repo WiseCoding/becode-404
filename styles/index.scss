@@ -22,6 +22,7 @@ main {
   position: relative;
   background: center / cover no-repeat url('../images/Day.jpg');
   height: 100%;
+  overflow: hidden;
 
   /* TEXT */
   .pageWrap {
@@ -137,7 +138,7 @@ main {
   }
 }
 
-/* Mobile Query */
+// When screen width goes below 600px
 @media screen and (max-width: 600px) {
   main {
     .pageWrap {
@@ -159,7 +160,8 @@ main {
 
     .mascotWrap {
       justify-content: start;
-      transform: translateX(-125px) rotate(40deg);
+      transform: rotate(40deg);
+      margin-left: -150px;
 
       img {
         max-width: 400px;
@@ -172,6 +174,7 @@ main {
     }
   }
 }
+// When screen width goes below 300px
 @media screen and (max-width: 380px) {
   main {
     .pageWrap {
@@ -190,14 +193,29 @@ main {
         }
       }
     }
-    .mascotWrap {
-      justify-content: start;
-      transform: translateX(-150px) rotate(40deg);
+  }
+}
 
-      img {
-        display: none;
-        max-width: 300px;
-      }
+// When screen height goes below 800px
+@media screen and (max-height: 820px) {
+  .mascotWrap {
+    img {
+      max-width: 400px;
+    }
+  }
+}
+@media screen and (max-height: 720px) {
+  .mascotWrap {
+    img {
+      max-width: 300px;
+    }
+  }
+}
+// When screen height goes below 650px
+@media screen and (max-height: 620px) {
+  .mascotWrap {
+    img {
+      visibility: hidden;
     }
   }
 }
