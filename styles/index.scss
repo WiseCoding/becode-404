@@ -16,6 +16,9 @@ body {
 /* Basic CSS */
 body {
   position: relative;
+  // Simulates Becode Header & Footer Bars
+  // padding-top: 190px;
+  // padding-bottom: 90px;
 }
 main {
   position: relative;
@@ -26,7 +29,6 @@ main {
   /* TEXT */
   .pageWrap {
     position: relative;
-    z-index: 100;
     padding: 10px 0;
 
     h1 {
@@ -64,6 +66,7 @@ main {
       margin: 20px 0;
 
       .button {
+        z-index: 100;
         text-align: center;
         font-family: 'Titillium Web', sans-serif;
         padding: 10px 30px;
@@ -167,7 +170,7 @@ main {
       margin-left: -150px;
 
       img {
-        max-width: 400px;
+        max-width: 350px;
       }
     }
 
@@ -195,25 +198,23 @@ main {
         }
       }
     }
+    .mascotWrap {
+      img {
+        max-width: 300px;
+      }
+    }
   }
 }
 
 // Screen height queries
-@media screen and (max-height: 820px) {
+@media screen and (max-height: 800px) {
   .mascotWrap {
     img {
       max-width: 300px;
     }
   }
 }
-@media screen and (max-height: 720px) {
-  .mascotWrap {
-    img {
-      max-width: 200px;
-    }
-  }
-}
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 500px) {
   .mascotWrap {
     img {
       visibility: hidden;
@@ -232,7 +233,7 @@ main {
     transform: translateX(0px) rotate(40deg);
   }
   to {
-    transform: translateX(2500px) rotate(180deg) scale(0.05);
+    transform: translateX(2500px) rotate(180deg) scale(0.05) translateY(-2000px);
   }
 }
 
@@ -242,5 +243,5 @@ main {
 }
 .mascotLeave {
   animation-name: leave;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
