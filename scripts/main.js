@@ -43,4 +43,15 @@
   dark.onclick = () => {
     mode.style.background = "center / cover no-repeat url('images/Evening.jpg')";
   };
+
+  // Click Mascot
+  document.querySelector('.mascotWrap').onclick = () => {
+    const mascot = document.querySelector('.mascotWrap');
+    mascot.classList.add('mascotLeave');
+
+    const timeout = setTimeout(() => {
+      mascot.classList.remove('mascotLeave');
+      clearTimeout(timeout);
+    }, 2000);
+  };
 })();
