@@ -52,6 +52,6 @@
     const timeout = setTimeout(() => {
       mascot.classList.remove('mascotLeave');
       clearTimeout(timeout);
-    }, 2000);
+    }, 1500);
   };
 })();

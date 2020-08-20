@@ -224,7 +224,7 @@ main {
 // Animations
 @keyframes enter {
   from {
-    transform: translateX(-1000px) scale(2) rotate(60deg);
+    transform: translateX(-1500px) scale(2) rotate(100deg);
   }
 }
 @keyframes leave {
@@ -232,13 +232,13 @@ main {
     transform: translateX(0px) rotate(40deg);
   }
   to {
-    transform: translateX(-2000px) rotate(-180deg);
+    transform: translateX(2500px) rotate(180deg) scale(0.05);
   }
 }
 
 .mascotWrap {
   animation-name: enter;
-  animation-duration: 1.2s;
+  animation-duration: 1.5s;
 }
 .mascotLeave {
   animation-name: leave;
