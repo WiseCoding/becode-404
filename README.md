@@ -1,6 +1,6 @@
 # 404 Page BeCode ④⓪④
 
-- [**Live Version**](https://wisecoding.github.io/becode-404/) - [**Live w/o banners**](https://wisecoding.github.io/becode-404/NOBANNERS/index.html)
+- [**Live Version**](https://wisecoding.github.io/becode-404/)
 
 # Assignment 📝
 
