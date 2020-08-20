@@ -1,0 +1,127 @@
+/* Reset Default Styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 1rem;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Basic CSS */
+body {
+  position: relative;
+  //padding: 150px 0px;
+}
+main {
+  background: center / cover no-repeat url('../images/Day.jpg');
+  height: 100%;
+}
+
+/* DARK/LIGHT MODE */
+.modeWrap {
+  position: absolute;
+  top: 0;
+  margin: 1rem;
+}
+
+/* TEXT */
+.pageWrap {
+  padding: 10px 0;
+
+  h1 {
+    margin: 20px auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+  }
+}
+.textBox {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 80%;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+
+  p {
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+}
+
+/* BUTTONS */
+.buttonWrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  .button {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 15px 35px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    border: 1px solid #16232e;
+    background-color: #16232ef5;
+    color: #ffffff;
+    margin: 15px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  .button:hover {
+    background-color: #16232e;
+    border-color: #ffffffe7;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Mobile Query */
+@media screen and (max-width: 600px) {
+  .pageWrap {
+    h1 {
+      font-size: 3rem;
+    }
+    .textBox {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .buttonWrap {
+      margin: 20px 20%;
+      .button {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .pageWrap {
+    h1 {
+      font-size: 2.3rem;
+    }
+    .textBox {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .buttonWrap {
+      margin: 20px 15%;
+      .button {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
